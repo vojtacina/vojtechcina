@@ -1,0 +1,11 @@
+.backdrop {
+    backdrop-filter: blur(12px);
+}
+
+body {
+    background-color: black;
+}
+
+.bg-dark {
+    background-color: rgb(31, 31, 31);
+}
