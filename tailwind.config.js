@@ -138,9 +138,7 @@ module.exports = {
                 '1440px': "1440px"
             },
             fontFamily: {
-                'mabry': ['Mabry', 'sans-serif', 'Helvetica'],
-                'gabriela': ['Gabriela', 'sans-serif', 'Helvetica'],
-                'muli': ['Muli', 'sans-serif']
+                'rubik': ['Rubik', 'sans-serif', 'Arial'],
             },
             spacing: {
                 '14': '3.5rem',
