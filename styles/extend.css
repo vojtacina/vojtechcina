@@ -4,8 +4,15 @@
 
 body {
     background-color: black;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
 }
 
 .bg-dark {
     background-color: rgb(31, 31, 31);
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("/fonts/Rubik.ttf") format("ttf");
 }
