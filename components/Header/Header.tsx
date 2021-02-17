@@ -12,7 +12,7 @@ export default function Header() {
 
             </div>
             <div className="w-full flex justify-end items-center">
-                <div className="font-semibold  px-12px  text-center cursor-pointer flex-shrink-0">Co dělám</div>
+                <div className="font-medium  px-12px  text-center cursor-pointer flex-shrink-0">Co dělám</div>
                 <div className="font-light   px-12px  text-center cursor-pointer">Poptávka</div>
             </div>
         </div>

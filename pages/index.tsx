@@ -3,11 +3,13 @@ import Leading from '../components/Leading'
 import Offer from '../components/Offer'
 import About from '../components/About'
 
-import { NextPage } from "next";
+
 import Head from "next/head";
 
-const Home: NextPage = () => (
-  <div className="text-white bg-black">
+export default function Home() {
+
+  return (
+    <div className="text-white bg-black">
     <Head>
       <title>Web rychlý jako blesk včetně grafiky | Vojtěch Cina - nezávislý profesionál</title>
       <meta name="description">Tvořím weby a webové aplikace na míru. Cena od 5000 Kč včetně všeho!</meta>
@@ -23,6 +25,9 @@ const Home: NextPage = () => (
     <Offer />
     <About />
   </div>
-);
+  )
 
-export default Home;
+  
+
+};
+

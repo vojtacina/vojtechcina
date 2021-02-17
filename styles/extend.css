@@ -2,10 +2,16 @@
     backdrop-filter: blur(12px);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: black;
     margin: 0 !important;
-    font-family: 'Rubik', sans-serif;
+    padding: 0 !important;
+    font-family: 'Rubik', 'Arial', sans-serif;
 }
 
 .bg-dark {
@@ -14,5 +20,5 @@ body {
 
 @font-face {
     font-family: "Rubik";
-    src: url("/fonts/Rubik.ttf") format("ttf");
+    src: url("/fonts/Rubik.ttf") format("truetype");
 }
