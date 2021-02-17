@@ -9,11 +9,12 @@ import Head from "next/head";
 export default function Home() {
 
   return (
+    <div className="bg-black">
 
-    <div className="text-white  " >
       <style jsx global>{`
       body {
         background-color: black;
+        color: white;
       }
     `}</style>
       <Head>
@@ -31,7 +32,9 @@ export default function Home() {
       <Leading />
       <Offer />
       <About />
+
     </div>
+
 
 
   )
