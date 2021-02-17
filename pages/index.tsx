@@ -9,7 +9,13 @@ import Head from "next/head";
 export default function Home() {
 
   return (
+
     <div className="text-white  " >
+      <style jsx global>{`
+      body {
+        background-color: black;
+      }
+    `}</style>
       <Head>
         <title>Web rychlý jako blesk včetně grafiky | Vojtěch Cina - nezávislý profesionál</title>
         <meta name="description">Tvořím weby a webové aplikace na míru. Cena od 5000 Kč včetně všeho!</meta>
@@ -19,12 +25,15 @@ export default function Home() {
           name="description"
           content="A quick starter Template for Next.js with Tailwind CSS and Typescript"
         />
+
       </Head>
       <Header />
       <Leading />
       <Offer />
       <About />
     </div>
+
+
   )
 
 
