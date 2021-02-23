@@ -12,8 +12,8 @@ export default function Header() {
 
             </div>
             <div className="w-full flex justify-end items-center">
-                <div className="font-semibold  px-12px  text-center cursor-pointer flex-shrink-0">Co dělám</div>
-                <div className="font-regular   px-12px  text-center cursor-pointer">Poptávka</div>
+                <div className="font-semibold  px-6px md:px-12px text-center cursor-pointer flex-shrink-0">Co dělám</div>
+                <div className="font-regular   px-6px md:px-12px text-center cursor-pointer">Poptávka</div>
             </div>
         </div>
     )

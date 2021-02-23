@@ -138,7 +138,8 @@ module.exports = {
                 '1440px': "1440px"
             },
             fontFamily: {
-                'rubik': ['Rubik', 'sans-serif', 'Arial'],
+                'quicksand': ['Quicksand', 'sans-serif', 'Arial'],
+                'encode': ['Encode', 'sans-serif', 'Arial'],
             },
             spacing: {
                 '14': '3.5rem',
