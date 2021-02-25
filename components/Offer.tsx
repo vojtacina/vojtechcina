@@ -5,6 +5,8 @@ export default function Offer() {
 
     let [items, setItems] = useState([
         { name: "Grafika na míru vašim představám", active: false, price: 5034 },
+        { name: "Tvorba loga a brand identity", active: false, price: 7000 },
+        { name: "Vytvoření textů na web (copywriting)", active: false, price: 7000 },
         { name: "Mapa prodejny nebo podniku", active: false, price: 954 },
         { name: "Fotogalerie", active: false, price: 1402 },
         { name: "Recenze", active: false, price: 1411 },

@@ -26,7 +26,7 @@ export default function Header() {
     return (
         <div className={"w-full flex p-16px fixed top-0  z-50 transition duration-1000 " + (!visible && "backdrop" )}>
             <div className="w-125px md:w-250px h-40px relative appear">
-                <Image src="/img/logo.svg" layout="fill" objectFit="contain" />
+                <Image src="/img/Logo.svg" layout="fill" objectFit="contain" />
 
             </div>
             <div className="w-full flex justify-end items-center">
