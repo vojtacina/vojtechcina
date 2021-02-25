@@ -6,16 +6,16 @@ export default function Offer() {
     let [items, setItems] = useState([
         { name: "Grafika na míru vašim představám", active: false, price: 5034 },
         { name: "Tvorba loga a brand identity", active: false, price: 7000 },
-        { name: "Vytvoření textů na web (copywriting)", active: false, price: 7000 },
-        { name: "Mapa prodejny nebo podniku", active: false, price: 954 },
+        { name: "Vytvoření textů na web (copywriting)", active: false, price: 3200 },
+        { name: "Mapa prodejny nebo podniku", active: false, price: 732 },
         { name: "Fotogalerie", active: false, price: 1402 },
-        { name: "Recenze", active: false, price: 1411 },
+        { name: "Recenze", active: false, price: 723 },
         { name: "Modul novinky", active: false, price: 3607 },
-        { name: "Aktuální otevírací doba", active: false, price: 400 },
+        { name: "Aktuální otevírací doba", active: false, price: 510 },
         { name: "Kalkulace ceny nebo poptávkový formulář", active: false, price: 2400 },
-        { name: "Vícejazyčný web", active: false, price: 9230 },
-        { name: "Rozsáhlý web (20+ stránek)", active: false, price: 7883 },
-        { name: "Uživatelská sekce", active: false, price: 13678 },
+        { name: "Vícejazyčný web", active: false, price: 6732 },
+        { name: "Rozsáhlý web (20+ stránek)", active: false, price: 6367 },
+        { name: "Uživatelská sekce", active: false, price: 8673 },
         { name: "Napojení na sociální sítě", active: false, price: 210 },
         { name: "Měření návštěvnosti", active: false, price: 49 },
         { name: "Možnost měnit texty na webu", active: false, price: 4500 },
@@ -54,6 +54,8 @@ export default function Offer() {
                 <div className="w-full text-center flex items-center justify-center my-12px">
                     <span>Vaše cena: </span><span className="ml-6px text-24 font-medium">{SumPrice()} Kč</span>
                 </div>
+                <div className="w-full h-1px bg-black"></div>
+                <div className="w-full p-12px text-12">Součástí webu je <strong>základní grafický návrh, responzivita, doména a hosting, SEO optimalizace a správa</strong></div>
 
 
 

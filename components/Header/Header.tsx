@@ -29,7 +29,7 @@ export default function Header() {
                 <Image src="/img/Logo.svg" layout="fill" objectFit="contain" />
 
             </div>
-            <div className="w-full flex justify-end items-center">
+            <div className="w-full flex justify-end items-center text-14 md:text-16">
                 <div className="font-semibold  px-6px md:px-12px text-center cursor-pointer flex-shrink-0">Poptávka</div>
                 <div className="font-regular   px-6px md:px-12px text-center cursor-pointer">Reference</div>
             </div>
