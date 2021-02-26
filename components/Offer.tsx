@@ -14,7 +14,7 @@ export default function Offer() {
         { name: "Aktuální otevírací doba", active: false, price: 600 },
         { name: "Kalkulace ceny nebo poptávkový formulář", active: false, price: 2400 },
         { name: "Vícejazyčný web", active: false, price: 7000 },
-        { name: "Rozsáhlý web (20+ stránek)", active: false, price: 4000 },
+        { name: "Rozsáhlý web (10+ stránek)", active: false, price: 8000 },
         { name: "Uživatelská sekce", active: false, price: 9000 },
         { name: "Vytvoření firemního e-mailu", active: false, price: 600 },
         { name: "Měření návštěvnosti a statistiky", active: false, price: 100 },
@@ -55,9 +55,9 @@ export default function Offer() {
 
 
     return (
-        <div className="w-full flex justify-center px-20px transform  -translate-y-60px">
+        <div className="w-full flex justify-center px-20px md:px-36px transform  -translate-y-60px">
             <div className="w-full max-w-6xl bg-dark  rounded-lg ">
-                <div className="w-full text-center mt-20px font-semibold ">Co Váš web může umět?</div>
+                <div className="w-full text-center mt-20px font-semibold ">Váš nový web na míru může obsahovat:</div>
                 <div className="grid grid-cols-1 md:grid-cols-2 mt-20px">
                     {items.map((line, i) =>
                         <div key={i + line.name} className="px-30px py-6px">
@@ -67,7 +67,7 @@ export default function Offer() {
                     )}
                 </div>
                 <div className="w-full text-center flex items-center justify-center my-12px">
-                    <span>Vaše cena: </span><span className="ml-6px text-24 font-medium">{SumPrice()} Kč </span>&nbsp; {naSplatky()}
+                    <span>Cena za web na míru: </span><span className="ml-6px text-24 font-medium">{SumPrice()} Kč </span>&nbsp; {naSplatky()}
                 </div>
                 <div className="w-full h-1px bg-black"></div>
                 <div className="w-full p-12px text-12">Součástí webu je vždy základní grafický návrh, responzivita, doména a hosting, SEO optimalizace a správa.</div>
