@@ -18,8 +18,8 @@ export default function Home() {
       }
     `}</style>
       <Head>
-        <title>Moderní web na míru včetně grafiky | Vojtěch Cina - nezávislý profesionál</title>
-        <meta name="description">Tvořím weby a webové aplikace na míru. Cena od 5000 Kč včetně všeho!</meta>
+        <title>Webové aplikace na míru včetně UI | Vojtěch Cina - nezávislý profesionál</title>
+        <meta name="description">Najměte na svůj projekt skutečného odborníka. Webové aplikace a webové stránky na míru. Již od 5000 Kč.</meta>
         <link rel="manifest" href="/static/manifest.json" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
