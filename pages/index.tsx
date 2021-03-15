@@ -20,7 +20,6 @@ export default function Home() {
     `}</style>
       <Head>
         <title>Webové aplikace nebo web na míru včetně UI | Vojtěch Cina</title>
-        <meta name="description">Profesionální webové stránky a webové aplikace na míru. Již od 5000 Kč. Kalkulace konečné ceny on-line!</meta>
         <link rel="manifest" href="/static/manifest.json" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
