@@ -51,6 +51,8 @@ module.exports = {
             55: '55px',
         },
 
+
+
         extend: {
 
             gridTemplateColumns: {
@@ -58,39 +60,16 @@ module.exports = {
             },
 
             colors: {
-                brown800: "#6B5738",
-                brown600: "#9B8974",
-                brown700: "#8F744B",
-                brown100: "#E5E1DB",
-                brown500: "#C0A987",
-                grey500: "#898989",
-                pondl100: "#EAE8DE",
-                green400: "#849C71",
-                blue500: '#16365D',
-                red500: "#D52943",
-                red800: "#6B1421",
-                green500: "#6C825B",
-                orange100: "#FFFDFA",
-                darkBlue: "#16365D",
-                begeHeadline: "#F0E7D9",
-                buttonBege: "#EAE8DE",
-                blood: '#F61338',
-                transparent: 'rgba(255,255,255,0)',
-                main: '#031034',
-                grayish: '#F4F4F4',
-                grayInput: '#9BA1B2',
-                grayForm: '#F6F6F6',
-                redish: 'rgba(218, 34, 34, 0.08)',
-                red: '#DA2222',
-                input: '#F3F3F3',
-                whitish: 'rgba(255,255,255,0.9)',
-                grayF2: '#F2F2F2',
-                grayBorder: '#E6E7EB',
-                grayLang: '#BABABA',
-                grayF6: "#F6F7F9",
-                divider: "#F6F7F9",
-                blueish: "#B6ECF0",
                 white: "#FFFFFF",
+                dark: '#383838',
+                gray: {
+                    400: '#B5B5B5',
+                    500: '#838383',
+                    600: '#686868',
+                    700: '#525252',
+                    800: '#383838',
+                },
+                transparent: 'rgba(0, 0, 0, 0)'
             },
             rotate: {
                 '-180': '-180deg',

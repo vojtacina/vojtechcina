@@ -89,7 +89,7 @@ export default function Offer() {
             </div>
             <div className="w-full flex justify-center px-20px md:px-36px transform  -translate-y-60px pt-6px">
                 {opened &&
-                    <div className="max-w-6xl p-12px text-12 text-gray-400 appear">Součástí webu je vždy základní grafický návrh, responzivita, doména a hosting, SEO optimalizace a správa.</div>
+                    <div className="max-w-6xl p-12px text-12 text-gray-400 appear text-center">Součástí webu je vždy základní grafický návrh, responzivita, doména a hosting, SEO optimalizace a správa.</div>
                 }
             </div>
         </div>
