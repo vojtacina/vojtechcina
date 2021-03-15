@@ -22,15 +22,17 @@ function Label({ color, heading, text }: LabelProps) {
     }
 
     useEffect(() => {
+        handleWindowSizeChange()
         window.addEventListener('resize', handleWindowSizeChange);
         return () => {
             window.removeEventListener('resize', handleWindowSizeChange);
         }
+        
     }, [])
 
     return (
         <div className="w-full flex items-top py-12px">
-            <div className={"w-30px h-30px rounded-full mr-12px flex-shrink-0 flex-grow-0 transition duration-200  bg-" + color}>
+            <div className={"w-30px h-30px rounded-full mr-12px flex-shrink-0 flex-grow-0 transition duration-200  " + color}>
 
             </div>
             <div>
@@ -75,16 +77,16 @@ export default function Graph() {
                         </div>
                     </div>
                     <div className="block  md:pl-30px px-12px md:pr-0 h-full ">
-                        <Label color={activeFirstPage ? "green-400" : "gray-400"} heading="SEO optimalizace" text="Pokud to s webem myslíte vážně, váš web musí být vyhledatelný na internetu. Až vám někdo bude říkat, že nejdůležitější je grafika, reference a kontaktní formulář, šeredně se plete." />
-                        <Label color={activeFirstPage ? "green-500" : "gray-500"} heading="Reklama" text="Reklama představuje snadný a efektivní způsob, jak získat návštěvníky webu. Pokud ale chcete co nejdříve generovat příjem, rozhodně zvažte investici do kvalitní reklamy." />
-                        <Label color={activeFirstPage ? "green-600" : "red-400"} heading="Uživatelský zážitek a grafika" text="Responzivní a rychlý web je základ. Přehledný a čistý vzhled je dokonalost. Hnusné weby nedělám. Uvidíte." />
+                        <Label color={activeFirstPage ? "bg-green-400" : "bg-gray-400"} heading="SEO optimalizace" text="Pokud to s webem myslíte vážně, váš web musí být vyhledatelný na internetu. Až vám někdo bude říkat, že nejdůležitější je grafika, reference a kontaktní formulář, šeredně se plete." />
+                        <Label color={activeFirstPage ? "bg-green-500" : "bg-gray-500"} heading="Reklama" text="Reklama představuje snadný a efektivní způsob, jak získat návštěvníky webu. Pokud ale chcete co nejdříve generovat příjem, rozhodně zvažte investici do kvalitní reklamy." />
+                        <Label color={activeFirstPage ? "bg-green-600" : "bg-red-400"} heading="Uživatelský zážitek a grafika" text="Responzivní a rychlý web je základ. Přehledný a čistý vzhled je dokonalost. Hnusné weby nedělám. Uvidíte." />
                     </div>
                     <div className="block md:pl-30px px-12px md:pr-0 h-full ">
-                        <Label color={activeFirstPage ? "green-700" : "red-500"} heading="Stránka referencí" text="Na reference se zákazníci dívají až jako na poslední věc. Pomohou, ale nejsou zásadní." />
-                        <Label color={activeFirstPage ? "gray-500" : "red-600"} heading="Kontaktní formulář" text="Stačí uvést email a telefon. Lepší řešení je on-line kalkulace ceny, se kterou vám rád pomohu." />
-                        <Label color={activeFirstPage ? "gray-600" : "red-700"} heading="Sekce blog nebo novinky" text="Web, který generuje zisk, nepotřebuje novinky. Nikdo je nečte." />
-                        <Label color={activeFirstPage ? "gray-700" : "red-800"} heading="Efekty, animace a speciální funkce" text="Na doplňkových efektech úspěch webu nezávisí." />
-                        <Label color={activeFirstPage ? "gray-800" : "red-900"} heading="O nás" text="Historické údaje o vaší firmě prodeje nezvýší." />
+                        <Label color={activeFirstPage ? "bg-green-700" : "bg-red-500"} heading="Stránka referencí" text="Na reference se zákazníci dívají až jako na poslední věc. Pomohou, ale nejsou zásadní." />
+                        <Label color={activeFirstPage ? "bg-gray-500" : "bg-red-600"} heading="Kontaktní formulář" text="Stačí uvést email a telefon. Lepší řešení je on-line kalkulace ceny, se kterou vám rád pomohu." />
+                        <Label color={activeFirstPage ? "bg-gray-600" : "bg-red-700"} heading="Sekce blog nebo novinky" text="Web, který generuje zisk, nepotřebuje novinky. Nikdo je nečte." />
+                        <Label color={activeFirstPage ? "bg-gray-700" : "bg-red-800"} heading="Efekty, animace a speciální funkce" text="Na doplňkových efektech úspěch webu nezávisí." />
+                        <Label color={activeFirstPage ? "bg-gray-800" : "bg-red-900"} heading="O nás" text="Historické údaje o vaší firmě prodeje nezvýší." />
                     </div>
                 </div>
                 <div className="w-full flex items-center flex-col mt-50px">
