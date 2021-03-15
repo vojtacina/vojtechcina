@@ -30,7 +30,7 @@ export default function Home() {
         <meta name="theme-color" content="#00000" />
         <meta
           name="description"
-          content="A quick starter Template for Next.js with Tailwind CSS and Typescript"
+          content="Profesionální webové stránky a webové aplikace na míru. Již od 5000 Kč. Kalkulace konečné ceny on-line!"
         />
 
       </Head>
