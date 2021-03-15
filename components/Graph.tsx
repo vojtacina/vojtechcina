@@ -34,7 +34,7 @@ function Label({ color, heading, text }: LabelProps) {
 
             </div>
             <div>
-                <div className="font-medium mt-4px cursor-pointer " onClick={() => setTouched(!touched)}>{heading}</div>
+                <h3 className="font-medium mt-4px cursor-pointer " onClick={() => setTouched(!touched)}>{heading}</h3>
                 {(text) &&
                     <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={300} isVisible={touched} className={(touched ? "block" : "hidden")+" lg:block font-light"}><div key={heading+"_text"}>{text}</div></Animated>
                 }
@@ -65,7 +65,7 @@ export default function Graph() {
     return (
         <div className="w-full flex justify-center px-20px my-60px">
             <div className="w-full max-w-6xl flex flex-col items-center">
-                <div className="w-full font-medium text-24 text-center py-20px">{activeFirstPage ? "Co dělá weby úspěšné" : "Co nedělá weby úspěšné"}</div>
+                <h2 className="w-full font-medium text-24 text-center py-20px">{activeFirstPage ? "Co dělá weby úspěšné" : "Co nedělá weby úspěšné"}</h2>
                 <div className="w-full md:w-1/3 text-16 text-center">{activeFirstPage ? "Úspěšný je web, který Vám přináší prodeje tím i jasný zisk. Umím se o to postarat." : "Někdo dělá weby opačným způsobem a nezaměřuje se na skutečné kvality webu."}</div>
                 <SelectGoodOrBadWeb firstActive={activeFirstPage} setFirstActive={(what:boolean) => setActiveFirstPage(what)} />
                 <div className="w-full grid grid-cols-1 md:grid-cols-3">

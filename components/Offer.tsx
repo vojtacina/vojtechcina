@@ -64,7 +64,7 @@ export default function Offer() {
         <div>
             <div className="w-full flex justify-center px-20px md:px-36px transform  -translate-y-60px">
                 <div className="w-full max-w-6xl bg-dark  rounded-lg ">
-                    <div className="w-full text-center mt-20px font-semibold ">Váš nový web na míru může obsahovat:</div>
+                    <div className="w-full text-center mt-20px font-semibold "><h2>Funkce Vašeho nového webu&nbsp;na&nbsp;míru</h2></div>
                     <div className={"grid grid-cols-1 md:grid-cols-2 mt-20px max-h-full overflow-hidden relative transition-all duration-100" + (!opened ? " h-400px md:h-200px mb-0" : " mb-20px ")}>
                         {items.map((line, i) =>
                             <div key={i + line.name} className="px-30px py-6px">
