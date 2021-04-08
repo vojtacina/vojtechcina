@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import {useEffect, useState} from 'react'
-import {Animated} from "react-animated-css";
+import { useEffect, useState } from 'react'
+import { Animated } from "react-animated-css";
+import Link from 'next/link'
 
 interface LabelProps {
     color: string,
@@ -13,10 +14,10 @@ function Label({ color, heading, text }: LabelProps) {
     const [touched, setTouched] = useState(false)
 
     function handleWindowSizeChange() {
-        if(window.innerWidth > 1000) {
+        if (window.innerWidth > 1000) {
             setTouched(true)
         }
-        else { 
+        else {
             setTouched(false)
         }
     }
@@ -27,7 +28,7 @@ function Label({ color, heading, text }: LabelProps) {
         return () => {
             window.removeEventListener('resize', handleWindowSizeChange);
         }
-        
+
     }, [])
 
     return (
@@ -38,7 +39,7 @@ function Label({ color, heading, text }: LabelProps) {
             <div>
                 <h3 className="font-medium mt-4px cursor-pointer " onClick={() => setTouched(!touched)}>{heading}</h3>
                 {(text) &&
-                    <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={300} isVisible={touched} className={(touched ? "block" : "hidden")+" lg:block font-light"}><div key={heading+"_text"}>{text}</div></Animated>
+                    <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={300} isVisible={touched} className={(touched ? "block" : "hidden") + " lg:block font-light"}><div key={heading + "_text"}>{text}</div></Animated>
                 }
             </div>
         </div>
@@ -51,8 +52,8 @@ interface SelectProps {
     setFirstActive: any,
 }
 
-function SelectGoodOrBadWeb({firstActive, setFirstActive}:SelectProps) {
-    return(
+function SelectGoodOrBadWeb({ firstActive, setFirstActive }: SelectProps) {
+    return (
         <div className="flex bg-gray-700 font-medium text-black rounded-lg text-14 my-30px select-none cursor-pointer" onClick={() => setFirstActive(!firstActive)}>
             <div className={(firstActive && "bg-gray-300 shadow-big ") + " py-6px px-12px  rounded-lg transition duration-200 z-20"}>Moderní web</div>
             <div className={(!firstActive && "bg-gray-300 shadow-big ") + " py-6px px-12px  rounded-lg transition duration-200  z-20"}>Klasický web</div>
@@ -69,7 +70,7 @@ export default function Graph() {
             <div className="w-full max-w-6xl flex flex-col items-center">
                 <h2 className="w-full font-medium text-24 text-center py-20px">{activeFirstPage ? "Co dělá weby úspěšné" : "Co nedělá weby úspěšné"}</h2>
                 <div className="w-full md:w-1/3 text-16 text-center">{activeFirstPage ? "Úspěšný je web, který Vám přináší prodeje tím i jasný zisk. Umím se o to postarat." : "Někdo dělá weby opačným způsobem a nezaměřuje se na skutečné kvality webu."}</div>
-                <SelectGoodOrBadWeb firstActive={activeFirstPage} setFirstActive={(what:boolean) => setActiveFirstPage(what)} />
+                <SelectGoodOrBadWeb firstActive={activeFirstPage} setFirstActive={(what: boolean) => setActiveFirstPage(what)} />
                 <div className="w-full grid grid-cols-1 md:grid-cols-3">
                     <div className="block h-300px md:h-full mb-20px md:mb-0 f w-full">
                         <div className="md:pb-full relative w-full h-300px select-none">
@@ -92,7 +93,10 @@ export default function Graph() {
                 <div className="w-full flex items-center flex-col mt-50px">
                     <div className="text-center text-16 font-semibold">Tak co, zkusíme to spolu?</div>
                     <div className="text-center text-16 font-regular">Nabídku pro vás vytvořím nezávazně a zdarma.</div>
-                    <div className="text-center text-16 font-regular h-65px bg-green-500 flex items-center justify-center px-50px rounded-lg my-20px font-medium select-none cursor-pointer hover:bg-green-400">Chci moderní web na míru</div>
+                    <div className="text-center text-16 font-regular">Napište mi na e-mail:</div>
+                    <Link href="mailto:jsem@vojtechcina.cz">
+                        <div className="text-center text-16 font-regular h-65px bg-green-500 flex items-center justify-center px-50px rounded-lg my-20px font-medium select-none cursor-pointer hover:bg-green-400">jsem@vojtechcina.cz</div>
+                    </Link>
                 </div>
             </div>
         </div>
