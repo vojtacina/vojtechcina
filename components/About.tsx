@@ -36,7 +36,7 @@ export default function About() {
                                     <li>IČO: 09902287</li>
                                 </ul>
                             </div>
-                            <Link href="/pomoc-s-pocitacem-brno">
+                            <Link href="/oprava-pc-brno">
                                 <div className="my-20px font-semibold cursor-pointer ">Opravuji počítače v Brně</div>
                             </Link>
                         </div>
