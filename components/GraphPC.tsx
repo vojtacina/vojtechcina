@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { Animated } from "react-animated-css";
 import Link from 'next/link'
