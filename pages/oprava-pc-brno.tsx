@@ -19,7 +19,7 @@ export default function Home() {
       }
     `}</style>
       <Head>
-        <title>Opravy PC Brno - přijedu k Vám</title>
+        <title>Levná oprava počítačů v Brně - přijedu k Vám</title>
         <link rel="manifest" href="/static/manifest.json" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
