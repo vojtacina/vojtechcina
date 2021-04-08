@@ -1,68 +1,17 @@
-import { useEffect, useState } from 'react'
-import { Animated } from "react-animated-css";
+
 import Link from 'next/link'
 
-interface LabelProps {
-    color: string,
-    heading: string,
-    text?: string
-}
 
-function Label({ color, heading, text }: LabelProps) {
 
-    const [touched, setTouched] = useState(false)
 
-    function handleWindowSizeChange() {
-        if (window.innerWidth > 1000) {
-            setTouched(true)
-        }
-        else {
-            setTouched(false)
-        }
-    }
 
-    useEffect(() => {
-        handleWindowSizeChange()
-        window.addEventListener('resize', handleWindowSizeChange);
-        return () => {
-            window.removeEventListener('resize', handleWindowSizeChange);
-        }
 
-    }, [])
 
-    return (
-        <div className="w-full flex items-top py-12px">
-            <div className={"w-30px h-30px rounded-full mr-12px flex-shrink-0 flex-grow-0 transition duration-200  " + color}>
 
-            </div>
-            <div>
-                <h3 className="font-medium mt-4px cursor-pointer " onClick={() => setTouched(!touched)}>{heading}</h3>
-                {(text) &&
-                    <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={300} isVisible={touched} className={(touched ? "block" : "hidden") + " lg:block font-light"}><div key={heading + "_text"}>{text}</div></Animated>
-                }
-            </div>
-        </div>
-
-    )
-}
-
-interface SelectProps {
-    firstActive: boolean,
-    setFirstActive: any,
-}
-
-function SelectGoodOrBadWeb({ firstActive, setFirstActive }: SelectProps) {
-    return (
-        <div className="flex bg-gray-700 font-medium text-black rounded-lg text-14 my-30px select-none cursor-pointer" onClick={() => setFirstActive(!firstActive)}>
-            <div className={(firstActive && "bg-gray-300 shadow-big ") + " py-6px px-12px  rounded-lg transition duration-200 z-20"}>Moderní web</div>
-            <div className={(!firstActive && "bg-gray-300 shadow-big ") + " py-6px px-12px  rounded-lg transition duration-200  z-20"}>Klasický web</div>
-        </div>
-    )
-}
 
 export default function Graph() {
 
-    const [activeFirstPage, setActiveFirstPage] = useState(true)
+
 
     return (
         <div className="w-full flex justify-center px-20px mb-60px">
