@@ -38,7 +38,7 @@ export default function About() {
                                 </ul>
                             </div>
                             <Link href="/oprava-pc-brno">
-                                <div className="my-20px font-semibold cursor-pointer ">Opravuji počítače v Brně</div>
+                                <div className="my-20px font-semibold cursor-pointer hidden ">Opravuji počítače v Brně</div>
                             </Link>
                         </div>
 
