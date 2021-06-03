@@ -18,6 +18,14 @@ export default function About() {
                         <div className="py-30px">
                             <div>Jmenuji se Vojtěch Cina a nabízím vám služby v oblasti tvorby webových stránek na míru včetně grafického designu. </div>
                             <div className="mt-6px">Ukázkové reference zašlu na vyžádání (kvůli GDPR). </div>
+                            <div className="py-20px text-18 font-light">Moje zkušenosti:</div>
+                            <div className="">
+                                <ul className="list-disc pl-30px">
+                                    <li><span className="font-semibold">5 let</span> zkušeností s tvorbou webu pro malé i velké podniky (rád zašlu ukázky)</li>
+                                    <li><span className="font-semibold">2 roky</span> bohatých zkušeností s tvorbou designu, grafiky a uživatelských rozhraní. Mám cit pro detail.</li>
+                                    <li><span className="font-semibold">Klíčové</span> dovednosti pro propagaci webu (SEO optimalizace + propagace)</li>
+                                </ul>
+                            </div>
                             <div className="py-20px text-18 font-light">Úspěchy v soutěžích:</div>
                             <div className="">
                                 <ul className="list-disc pl-30px">
@@ -25,7 +33,7 @@ export default function About() {
                                     <li><span className="font-semibold">1. místo</span> Talent Olomouckého kraje v technickém a dovednostním oboru  </li>
                                     <li><span className="font-semibold">25. místo</span> v celostátním kole soutěže v programování webových stránek   </li>
                                     <li><span className="font-semibold">4. místo</span> v krajském kole soutěže v programování webových stránek   </li>
-                                    <li><span className="font-semibold">1. místo</span>  v okresním kole soutěže v programování webu   </li> 
+                                    <li><span className="font-semibold">1. místo</span>  v okresním kole soutěže v programování webu   </li>
                                 </ul>
                             </div>
                             <div className="py-20px text-18 font-light">Kontaktní údaje:</div>
