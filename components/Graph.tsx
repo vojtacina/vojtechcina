@@ -76,7 +76,7 @@ export default function Graph() {
                 <div className="w-full grid grid-cols-1 md:grid-cols-3">
                     <div className="block h-300px md:h-full mb-20px md:mb-0 f w-full">
                         <div className="md:pb-full relative w-full h-300px select-none">
-                            <Image src={activeFirstPage ? "/img/graph_green.svg" : "/img/graph_red.svg"} layout="fill" objectFit="contain" unoptimized={true} />
+                            <Image src={activeFirstPage ? "/img/graph_green.svg" : "/img/graph_red.svg"} layout="fill" objectFit="contain" loading="eager" unoptimized={true} />
                         </div>
                     </div>
                     <div className="block  md:pl-30px px-12px md:pr-0 h-full ">
