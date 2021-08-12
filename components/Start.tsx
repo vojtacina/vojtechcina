@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import ItemTickbox from './Form/ItemTickbox'
 import {motion} from 'framer-motion'
 
 export default function Start() {
