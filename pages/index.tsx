@@ -1,6 +1,6 @@
 import Header from '../components/Header/Header'
 import Leading from '../components/Leading'
-import Offer from '../components/Offer'
+import Start from '../components/Start'
 import About from '../components/About'
 import Graph from '../components/Graph'
 
@@ -35,7 +35,7 @@ export default function Home() {
       </Head>
       <Header />
       <Leading />
-      <Offer />
+      <Start />
       <Graph />
       <About />
 

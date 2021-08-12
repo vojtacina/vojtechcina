@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 
 export default function Header() {
@@ -11,7 +12,7 @@ export default function Header() {
     const handleScroll = () => {
         const currentScrollPos = window.pageYOffset;
 
-        setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
+        setVisible(currentScrollPos < 50);
 
         setPrevScrollPos(currentScrollPos);
     };
@@ -25,7 +26,15 @@ export default function Header() {
 
 
     return (
-        <div className={"w-full flex p-16px fixed top-0 items-center z-50 transition duration-1000 " + (!visible && "backdrop")}>
+        <motion.div 
+        initial={false}
+        animate={{
+            paddingTop: visible ? "16px" : "2px",
+            paddingBottom: visible ? "20px" : "2px",
+            borderColor: visible ? "transparent": '#383838'
+        }}
+        
+        className={"w-full border-b flex px-16px bg-black bg-opacity-10 border-opacity-25 fixed top-0 items-center z-50 transition duration-1000 " + (!visible && "backdrop")}>
             <div className="w-200px md:w-250px relative appear h-40px">
                 <Image src="/img/Logo.svg" layout="fill" objectFit="contain" unoptimized={true} loading="eager" />
 
@@ -36,6 +45,6 @@ export default function Header() {
                 </Link>
                 <div className="font-light   px-6px md:px-12px text-center cursor-pointer"></div>
             </div>
-        </div>
+        </motion.div>
     )
 }
