@@ -1,12 +1,7 @@
-import Header from '../components/Header/Header'
-import Leading from '../components/Leading'
-import Start from '../components/Start'
-import About from '../components/About'
-import Graph from '../components/Graph'
+
 import Link from 'next/link'
 
 import Head from "next/head";
-import Contact from '../components/Contact'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 
