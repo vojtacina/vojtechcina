@@ -6,6 +6,7 @@ import Graph from '../components/Graph'
 
 
 import Head from "next/head";
+import Contact from '../components/Contact'
 
 export default function Home() {
 
@@ -19,7 +20,7 @@ export default function Home() {
       }
     `}</style>
       <Head>
-        <title>Vojtěch Cina - tvorba grafiky a webů na míru</title>
+        <title>Vojtěch Cina</title>
         <link rel="manifest" href="/static/manifest.json" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -29,15 +30,15 @@ export default function Home() {
         <meta name="theme-color" content="#00000" />
         <meta
           name="description"
-          content="Profesionální webové stránky a webové aplikace na míru. Již od 5000 Kč. Kalkulace konečné ceny on-line!"
+          content=""
         />
 
       </Head>
-      <Header />
-      <Leading />
-      <Start />
-      <Graph />
-      <About />
+      {/* <Header /> */}
+      {/* <Leading /> */}
+      <Contact />
+      {/* <Graph />
+      <About /> */}
 
     </div>
 
