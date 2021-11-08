@@ -7,14 +7,18 @@ export default function About() {
 
     return (
 
-        <div className="w-full flex justify-center px-20px my-60px">
+        <div className="w-full flex justify-center px-20px my-60px relative bg-opacity-30">
             <div className="w-full max-w-6xl">
-                <div className="w-full font-light text-36 text-center py-20px">Kdo jsem</div>
-                <div className=" grid grid-cols-1 md:grid-cols-2">
-                    <div className="w-full h-200px md:h-full relative select-none order-2 md:order-1">
-                        <Image src="/img/myface.jpg" layout="fill" objectFit="contain" />
+                <div className="w-full font-light text-36 text-center py-20px z-10">Kdo jsem</div>
+                <div className=" grid grid-cols-1 md:grid-cols-2 z-10 gap-x-30px">
+                    <div className="w-full h-200px md:h-full relative select-none order-2 md:order-1 rounded-xl overflow-hidden">
+                        <Image src="/img/vojta_green.jpg" layout="fill" objectFit="cover" />
                     </div>
-                    <div className="md:w-2/3  flex items-center order-1 md:order-2">
+                    {/* <div className="w-full h-200px md:h-full /relative select-none order-2 md:order-1 z-0">
+                        <Image src="/img/vojta_green.jpg" layout="fill" objectFit="contain" className="object-left z-0" />
+                    </div> */}
+                    {/* <div className="absolute h-full w-full top-0 bottom-0 left-0 right-0 bg-black md:bg-transparent md:bg-gradient-to-r bg-gradient-to-b from-transparent to-black bg-opacity-50"></div> */}
+                    <div className="md:w-2/3  flex items-center order-1 md:order-2 z-10">
                         <div className="py-30px">
                             <div>Jmenuji se Vojtěch Cina a nabízím vám služby v oblasti tvorby webových stránek na míru včetně grafického designu. </div>
                             <div className="mt-6px">Ukázkové reference zašlu na vyžádání (kvůli GDPR). </div>

@@ -20,7 +20,7 @@ export default function Offer() {
         { name: "Uživatelská sekce", active: false, price: 9000 },
         { name: "Vyhledávač nebo filtrování (např. produktů, uživatelů, ...)", active: false, price: 4500 },
         { name: "Vytvoření firemního e-mailu", active: false, price: 600 },
-        { name: "Měření návštěvnosti a statistiky", active: false, price: 100 },
+        { name: "Měření návštěvnosti a statistiky", active: false, price: 300 },
         { name: "Možnost měnit texty na webu (vlastní administrace)", active: false, price: 4500 },
         { name: "Napojení webu na externí nástroje (API, Excel, ...)", active: false, price: 5400 },
         { name: "Vývoj mobilní aplikace (Android + iOS)", active: false, price: 24000 },
@@ -75,8 +75,8 @@ export default function Offer() {
                         <div className={(opened && "hidden ") + " absolute left-0 right-0 bottom-0 h-80px cursor-pointer gradient-more transition duration-150 flex justify-center items-end font-medium transform hover:scale-105 pb-20px"} onClick={() => setOpened(true)}>▼&nbsp;&nbsp;Zobrazit vše&nbsp;&nbsp;▼</div>
                     </div>
                     <div className="w-full h-1px bg-black"></div>
-                    <div className="w-full text-center flex items-center justify-center my-12px">
-                        <span>Cena za web na míru: </span><span className="ml-6px text-24 font-medium">{SumPrice()} Kč </span>&nbsp; {naSplatky()}
+                    <div className="w-full text-center flex items-center flex-wrap justify-center my-12px">
+                        <span>Cena za web na míru: </span><span className="ml-6px text-24 font-medium">{SumPrice()} Kč </span>&nbsp; {naSplatky()}  <span className=" px-4px py-2px bg-green-500 font-semibold rounded text-white text-14">dodání přibližně {Math.floor(SumPrice() / 350)} dní</span>
                     </div>
 
 

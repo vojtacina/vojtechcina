@@ -34,7 +34,7 @@ export default function Header() {
             borderColor: visible ? "transparent": '#383838'
         }}
         
-        className={"w-full border-b flex px-16px bg-black bg-opacity-10 border-opacity-25 fixed top-0 items-center z-50 transition duration-1000 " + (!visible && "backdrop")}>
+        className={"w-full border-b flex px-16px bg-black bg-opacity-70 border-opacity-25 fixed top-0 items-center z-50 transition duration-1000 " + (!visible && "backdrop")}>
             <div className="w-200px md:w-250px relative appear h-40px">
                 <Image src="/img/Logo.svg" layout="fill" objectFit="contain" unoptimized={true} loading="eager" />
 
