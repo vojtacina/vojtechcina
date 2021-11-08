@@ -2,7 +2,7 @@
 import Head from "next/head";
 import React from "react";
 import About from "../components/About";
-import Contact from '../components/Contact'
+// import Contact from '../components/Contact'
 import Graph from "../components/Graph";
 import Header from "../components/Header/Header";
 import Leading from "../components/Leading";

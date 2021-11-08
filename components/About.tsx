@@ -12,7 +12,7 @@ export default function About() {
                 <div className="w-full font-light text-36 text-center py-20px z-10">Kdo jsem</div>
                 <div className=" grid grid-cols-1 md:grid-cols-2 z-10 gap-x-30px">
                     <div className="w-full h-200px md:h-full relative select-none order-2 md:order-1 rounded-xl overflow-hidden">
-                        <Image src="/img/vojta_green.jpg" layout="fill" objectFit="cover" />
+                        <Image src="/img/myface.jpg" layout="fill" objectFit="cover" />
                     </div>
                     {/* <div className="w-full h-200px md:h-full /relative select-none order-2 md:order-1 z-0">
                         <Image src="/img/vojta_green.jpg" layout="fill" objectFit="contain" className="object-left z-0" />
