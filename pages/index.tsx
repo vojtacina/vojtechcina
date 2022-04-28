@@ -1,17 +1,45 @@
 
+import axios from "axios";
+import { AnimatePresence, motion } from "framer-motion";
 import Head from "next/head";
-import Link from "next/link";
-import { PaperPlaneTilt } from "phosphor-react";
-import React from "react";
+import { Check, HourglassMedium, PaperPlaneTilt, PhoneIncoming } from "phosphor-react";
+import React, { useRef, useState } from "react";
 import About from "../components/About";
-import Contact from "../components/Contact";
 // import Contact from '../components/Contact'
-import Graph from "../components/Graph";
-import Header from "../components/Header/Header";
+import useOnClickOutside from "../components/hooks/clickOutside";
 import Leading from "../components/Leading";
-import Offer from "../components/Offer";
 
 export default function Home() {
+
+  const [clicked, setClicked] = useState(false);
+  const [phoneNumber, setPhoneNumber] = useState(null as any);
+  const [sent, setSent] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const ref = useRef(null as any)
+
+  useOnClickOutside(ref, () => setClicked(false))
+
+  async function sendMessage() {
+
+    if (phoneNumber?.length > 8 && !sent) {
+      setSent(true)
+      axios.post("/api/sms", { body: (phoneNumber + " prosí o zavolání do 24h ohledně tvorby webu.") }).then((res) => {
+        if (res.data.success) {
+          setClicked(false)
+          setPhoneNumber(false)
+          setSent(false)
+          setSuccess(true)
+        }
+        else {
+          alert("Došlo k chybě")
+        }
+        console.log(res)
+      })
+    }
+
+
+
+  }
 
   return (
     <div className="bg-black">
@@ -44,13 +72,57 @@ export default function Home() {
       {/* <Graph /> */}
       <About />
       <div className="fixed bottom-0 left-0 right-0 px-20px md:pb-20px z-20 flex justify-center">
-        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSf2SXbVN4y-4BURTc7X4I5lyPhGsYa13je5FOQ7PCcPMi3m0Q/viewform?usp=sf_link">
-          <a target='_blank' className="text-center gap-6px text-16 font-regular h-45px bg-emerald-600 flex items-center justify-center px-20px rounded-lg my-10px font-medium select-none cursor-pointer hover:bg-emerald-500">
+
+        {success ?
+          <div className="text-center gap-6px text-16 font-regular h-45px bg-gray-800 flex items-center justify-center px-20px rounded-lg my-10px font-medium select-none cursor-pointer">
+            <Check size={24} />
+            <div className="">Brzy se Vám ozvu. 🙂</div>
+          </div>
+          :
+          <div onClick={() => setClicked(true)} className="text-center gap-6px text-16 font-regular h-45px bg-emerald-600 flex items-center justify-center px-20px rounded-lg my-10px font-medium select-none cursor-pointer hover:bg-emerald-500">
             <PaperPlaneTilt size={24} />
             <div className="">Získat nabídku</div>
-          </a>
-        </Link>
+          </div>
+        }
+
       </div>
+      <AnimatePresence>
+        {clicked &&
+          <motion.div
+            exit={{ opacity: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className={" z-50 fixed top-0 bottom-0 left-0 right-0 bg-black backdrop bg-opacity-40 flex justify-center items-end md:items-center "}>
+            <motion.div
+              exit={{ opacity: 0, scale: 1, y: 100 }}
+              initial={{ opacity: 0, scale: 1, y: 100 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              className=" overflow-y-hidden max-h-screen overflow-x-hidden hide-scroll pb-0 md:pb-48px w-full md:w-auto "
+            >
+              <div ref={ref} className="bg-black border-t md:border border-gray-800 p-20px md:rounded-lg w-full md:w-auto  ">
+                {/* <div className="mb-12px">Zadejte své telefonní číslo prosím</div> */}
+                <div className="block md:hidden mb-12px text-14">Ozvu se Vám do 24 hodin a zeptám se vás na vše podstatné.</div>
+                <div className="flex flex-col md:flex-row items-stretch gap-8px">
+                  <input onChange={(el) => setPhoneNumber(el.target.value)} type="tel" name="phone" placeholder="Vaše telefonní číslo" className=" rounded-lg shadow-ontop w-full px-16px h-45px md:h-auto md:py-16px focus:outline-none text-18 text-black tracking-wide"></input>
+                  <div onClick={() => {
+                    sendMessage()
+                  }} className={`text-center flex-nowrap gap-6px h-45px md:h-auto text-16 font-regular bg-emerald-600 ${sent ? "bg-gray-800" : "bg-emerald-600 hover:bg-emerald-500"} flex items-center justify-center px-20px rounded-lg font-medium select-none cursor-pointer `}>
+                    {sent ?
+                      <HourglassMedium size={24} />
+                      :
+                      <PhoneIncoming size={24} />
+                    }
+                    <div className=" whitespace-nowrap flex-nowrap">{sent ? "Ověřování..." : "Potvrdit"}</div>
+                  </div>
+                </div>
+                <div className="hidden md:block mt-12px text-14">Ozvu se Vám do 24 hodin a zeptám se vás na vše podstatné.</div>
+              </div>
+
+            </motion.div>
+
+          </motion.div>
+        }
+      </AnimatePresence>
 
     </div>
 

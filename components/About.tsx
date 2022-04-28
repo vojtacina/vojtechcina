@@ -20,8 +20,11 @@ export default function About() {
                     {/* <div className="absolute h-full w-full top-0 bottom-0 left-0 right-0 bg-black md:bg-transparent md:bg-gradient-to-r bg-gradient-to-b from-transparent to-black bg-opacity-50"></div> */}
                     <div className="md:w-2/3  flex items-center order-1 md:order-2 z-10">
                         <div className="py-30px">
-                            <div>Jmenuji se Vojtěch Cina a nabízím vám služby v oblasti tvorby webových stránek na míru včetně grafického designu. </div>
-
+                            <div className="mb-12px">
+                                Tvořím webové stránky, dělám grafiku a pomáhám ostatním prezentovat se na internetu. 
+                            </div>
+                            <div className="mb-12px">Nemusíte rozumnět vůbec ničemu, co se týká internetu. Od toho jsem tady já, abych Vám s tím pomohl. </div>
+                            <div>Vytvářím weby a řešení, které dávají smysl a přinášejí překvapivé výsledky.</div>
                             <div className="py-20px text-18 font-light">Moje zkušenosti:</div>
                             <div className="">
                                 <ul className="list-disc pl-30px">

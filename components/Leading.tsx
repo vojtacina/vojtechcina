@@ -1,7 +1,7 @@
 // import Image from 'next/image' 
 
 import Link from "next/link";
-import { ArrowDown } from "phosphor-react";
+import { ArrowDown, ArrowSquareOut, ArrowSquareUpRight } from "phosphor-react";
 
 
 export default function Leading() {
@@ -17,7 +17,9 @@ export default function Leading() {
                     </div>
                     <div className="mt-20px flex flex-col w-full md:flex-row items-center justify-center gap-8px">
                         <Link href="https://voj.notion.site/d32d1aec6e6b4cbcad7a1e762cd715e3?v=f58a98d17957461cb32c2b268bf7ba1d">
-                            <a target='_blank' className="text-center text-16 font-regular h-45px bg-gray-800 flex items-center justify-center px-20px rounded-lg my-10px font-medium select-none cursor-pointer hover:bg-gray-700">Reference</a>
+                            <a target='_blank' className="text-center text-16 font-regular h-45px bg-gray-800 flex items-center justify-center px-20px rounded-lg my-10px font-medium select-none cursor-pointer hover:bg-gray-700">
+                                <div>Reference</div>
+                            </a>
                         </Link>
                         {/* <div className="hidden md:block">
                             <Link href="https://voj.notion.site/Kontakt-fb03fcd95ae2480e9c9f84f216cf5640">
