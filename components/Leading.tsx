@@ -1,7 +1,7 @@
 // import Image from 'next/image' 
 
 import Link from "next/link";
-import { ArrowDown, ArrowSquareOut, ArrowSquareUpRight } from "phosphor-react";
+import { ArrowDown } from "phosphor-react";
 
 
 export default function Leading() {
