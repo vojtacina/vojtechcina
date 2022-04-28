@@ -24,7 +24,7 @@ export default function Contact() {
                             whileHover={{
                                 scale: 1.025
                             }}
-                            onClick={() => setSelected("osobne")} className={" hover:scale-105 transform  cursor-pointer rounded-lg gap-x-16px flex justify-center items-center  transition duration-200 m-20px p-16px text-center " + (selected == "web" ? " bg-green-400 text-white " : " hover:bg-gray-800 ")}>
+                            onClick={() => setSelected("osobne")} className={" hover:scale-105 transform  cursor-pointer rounded-lg gap-x-16px flex justify-center items-center  transition duration-200 m-20px p-16px text-center " + (selected == "web" ? " bg-emerald-400 text-white " : " hover:bg-gray-800 ")}>
                             <Image src="/img/king.png" width={32} height={32} objectFit="contain" />
                             <h3 className="text-16 md:text-24 font-semibold pb-8px">Osobní setkání</h3>
                         </motion.div>
@@ -37,7 +37,7 @@ export default function Contact() {
                                 whileHover={{
                                     scale: 1.025
                                 }}
-                                onClick={() => setSelected("postou")} className={" hover:scale-105 transform  cursor-pointer rounded-lg flex justify-center items-center gap-x-16px  transition duration-200 m-20px p-16px text-center " + (selected == "grafika" ? " bg-green-400 text-white " : " hover:bg-gray-800 ")}>
+                                onClick={() => setSelected("postou")} className={" hover:scale-105 transform  cursor-pointer rounded-lg flex justify-center items-center gap-x-16px  transition duration-200 m-20px p-16px text-center " + (selected == "grafika" ? " bg-emerald-400 text-white " : " hover:bg-gray-800 ")}>
 
 
                                 <Image src="/img/dopis.png" width={32} height={32} objectFit="contain" />
@@ -58,7 +58,7 @@ export default function Contact() {
                                     whileHover={{
                                         scale: 1.025
                                     }}
-                                    onClick={() => setSelected("telegram")} className={" hover:scale-105 transform  cursor-pointer rounded-lg flex justify-center items-center  transition duration-200  m-8px md:m-20px p-16px text-center " + (selected == "poradenstvi" ? " bg-green-400 text-white " : " hover:bg-gray-800 ")}>
+                                    onClick={() => setSelected("telegram")} className={" hover:scale-105 transform  cursor-pointer rounded-lg flex justify-center items-center  transition duration-200  m-8px md:m-20px p-16px text-center " + (selected == "poradenstvi" ? " bg-emerald-400 text-white " : " hover:bg-gray-800 ")}>
                                     <Image src="/img/messenger.png" width={32} height={32} />
                                 </motion.div>
                             </a>
@@ -73,7 +73,7 @@ export default function Contact() {
                             whileHover={{
                                 scale: 1.025
                             }}
-                            onClick={() => setSelected("instagram")} className={" hover:scale-105 transform  cursor-pointer rounded-lg flex justify-center items-center  transition duration-200  m-8px md:m-20px p-16px text-center " + (selected == "poradenstvi" ? " bg-green-400 text-white " : " hover:bg-gray-800 ")}>
+                            onClick={() => setSelected("instagram")} className={" hover:scale-105 transform  cursor-pointer rounded-lg flex justify-center items-center  transition duration-200  m-8px md:m-20px p-16px text-center " + (selected == "poradenstvi" ? " bg-emerald-400 text-white " : " hover:bg-gray-800 ")}>
                             <Image src="/img/instagram.png" width={32} height={32} />
                         </motion.div>
                         </a>
@@ -88,7 +88,7 @@ export default function Contact() {
                             whileHover={{
                                 scale: 1.025
                             }}
-                            onClick={() => setSelected("snapchat")} className={" hover:scale-105 transform  cursor-pointer rounded-lg flex  items-center justify-center transition duration-200  m-8px md:m-20px p-16px text-center " + (selected == "poradenstvi" ? " bg-green-400 text-white " : " hover:bg-gray-800 ")}>
+                            onClick={() => setSelected("snapchat")} className={" hover:scale-105 transform  cursor-pointer rounded-lg flex  items-center justify-center transition duration-200  m-8px md:m-20px p-16px text-center " + (selected == "poradenstvi" ? " bg-emerald-400 text-white " : " hover:bg-gray-800 ")}>
                             <Image src="/img/snapchat.png" width={32} height={32} className="object-contain" />
                         </motion.div>
                         </a>
@@ -104,7 +104,7 @@ export default function Contact() {
                             whileHover={{
                                 scale: 1.025
                             }}
-                            onClick={() => setSelected("snapchat")} className={" hover:scale-105 transform  cursor-pointer rounded-lg flex  items-center justify-center transition duration-200 m-8px md:m-20px p-16px text-center " + (selected == "poradenstvi" ? " bg-green-400 text-white " : " hover:bg-gray-800 ")}>
+                            onClick={() => setSelected("snapchat")} className={" hover:scale-105 transform  cursor-pointer rounded-lg flex  items-center justify-center transition duration-200 m-8px md:m-20px p-16px text-center " + (selected == "poradenstvi" ? " bg-emerald-400 text-white " : " hover:bg-gray-800 ")}>
                             E-mail
                         </motion.div>
                         </a>

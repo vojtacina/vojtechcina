@@ -1,18 +1,18 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
+import { Trophy } from 'phosphor-react'
 
 export default function About() {
 
 
     return (
 
-        <div className="w-full flex justify-center px-20px my-60px relative bg-opacity-30">
+        <div className="w-full text-14 md:text-16 flex justify-center px-20px my-60px relative bg-opacity-30">
             <div className="w-full max-w-6xl">
-                <div className="w-full font-light text-36 text-center py-20px z-10">Kdo jsem</div>
+                {/* <div className="w-full font-light text-24 text-center py-20px z-10">Kdo jsem</div> */}
                 <div className=" grid grid-cols-1 md:grid-cols-2 z-10 gap-x-30px">
-                    <div className="w-full h-200px md:h-full relative select-none order-2 md:order-1 rounded-xl overflow-hidden">
-                        <Image src="/img/myface.jpg" layout="fill" objectFit="cover" />
+                    <div className="w-full h-400px md:h-full relative select-none order-2 md:order-1 rounded-xl overflow-hidden">
+                        <Image src="/img/thatsme.jpg" layout="fill" objectFit="cover" className='object-top' />
                     </div>
                     {/* <div className="w-full h-200px md:h-full /relative select-none order-2 md:order-1 z-0">
                         <Image src="/img/vojta_green.jpg" layout="fill" objectFit="contain" className="object-left z-0" />
@@ -21,7 +21,7 @@ export default function About() {
                     <div className="md:w-2/3  flex items-center order-1 md:order-2 z-10">
                         <div className="py-30px">
                             <div>Jmenuji se Vojtěch Cina a nabízím vám služby v oblasti tvorby webových stránek na míru včetně grafického designu. </div>
-                            <div className="mt-6px">Ukázkové reference zašlu na vyžádání (kvůli GDPR). </div>
+
                             <div className="py-20px text-18 font-light">Moje zkušenosti:</div>
                             <div className="">
                                 <ul className="list-disc pl-30px">
@@ -32,13 +32,11 @@ export default function About() {
                             </div>
                             <div className="py-20px text-18 font-light">Úspěchy v soutěžích:</div>
                             <div className="">
-                                <ul className="list-disc pl-30px">
-                                    <li><span className="font-semibold">1. místo</span> v celostátním kole soutěže v programování kancelářských aplikací </li>
-                                    <li><span className="font-semibold">1. místo</span> Talent Olomouckého kraje v technickém a dovednostním oboru  </li>
-                                    <li><span className="font-semibold">25. místo</span> v celostátním kole soutěže v programování webových stránek   </li>
-                                    <li><span className="font-semibold">4. místo</span> v krajském kole soutěže v programování webových stránek   </li>
-                                    <li><span className="font-semibold">1. místo</span>  v okresním kole soutěže v programování webu   </li>
-                                </ul>
+
+                                <div className='mt-6px'><span className="font-semibold flex items-center"><Trophy color='#dba800' weight='fill' />&nbsp; 1. místo</span> v celostátním kole soutěže v programování kancelářských aplikací </div>
+                                <div className='mt-6px'><span className="font-semibold flex items-center"><Trophy color='#dba800' weight='fill' />&nbsp; 1. místo</span> Talent Olomouckého kraje v technickém a dovednostním oboru  </div>
+                                <div className='mt-6px'><span className="font-semibold flex items-center"><Trophy color='gray' weight='fill' />&nbsp; 25. místo</span> v celostátním kole soutěže v programování webových stránek   </div>
+
                             </div>
                             <div className="py-20px text-18 font-light">Kontaktní údaje:</div>
                             <div className="">

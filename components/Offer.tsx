@@ -76,7 +76,7 @@ export default function Offer() {
                     </div>
                     <div className="w-full h-1px bg-black"></div>
                     <div className="w-full text-center flex items-center flex-wrap justify-center my-12px">
-                        <span>Cena za web na míru: </span><span className="ml-6px text-24 font-medium">{SumPrice()} Kč </span>&nbsp; {naSplatky()}  <span className=" px-4px py-2px bg-green-500 font-semibold rounded text-white text-14">dodání přibližně {Math.floor(SumPrice() / 350)} dní</span>
+                        <span>Cena za web na míru: </span><span className="ml-6px text-24 font-medium">{SumPrice()} Kč </span>&nbsp; {naSplatky()}  <span className=" px-4px py-2px bg-emerald-500 font-semibold rounded text-white text-14">dodání přibližně {Math.floor(SumPrice() / 350)} dní</span>
                     </div>
 
 

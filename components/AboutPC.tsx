@@ -22,7 +22,7 @@ export default function About() {
                             <div className="">
                                 <ul className="list-disc pl-30px">
                                     <li>Úvoz 445/116 Brno-Veveří</li>
-                                    <li className="text-green-400 font-semibold">jsem@vojtechcina.cz</li>
+                                    <li className="text-emerald-400 font-semibold">jsem@vojtechcina.cz</li>
                                     <li>+420 774 148 327</li>
                                     <li>IČO: 09902287</li>
                                 </ul>

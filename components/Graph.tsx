@@ -71,7 +71,7 @@ export default function Graph() {
                 <h2 className="w-full font-medium text-24 text-center py-20px">{activeFirstPage ? "Proč web ode mě?" : "Web od velké firmy"}</h2>
                 <div className="w-full md:w-1/3 text-16 text-center">{activeFirstPage ? "Se mnou platíte za skutečně odvedenou práci na vteřiny přesně. 100 % vašeho rozpočtu bude využito k práci na vašem webu. Vrátí se Vám to." : "Firma zdlouhavě dokončuje zakázku a svým zaměstnancům vyplatí minimum toho, co jste zaplatili."}</div>
                 <div className="w-full md:w-1/3 text-16 text-center mt-8px">{activeFirstPage ? "Vím, že tvorba webů mě živí a musím odvádět kvalitní práci. Na to se můžete spolehnout." : "Zaměstnanci takové zakázky dělají bez zájmu a projeví se to na kvalitě webu."}</div>
-                <div className="w-full mt-6px md:w-1/3 text-16 text-center">{activeFirstPage ? <span>Kvalita webu = více než <span className="text-green-400 font-semibold">90 %</span> - to dokládají i měřící nástroje Googlu, kde mé weby dosahují vynikajících výsledků (tzv. Core web vitals) </span> : <span>Kvalita webu = méně než <span className="text-red-400 font-semibold">45 %</span> - za hodně peněz málo muziky. Obchodní oddělení vás přesvědčí i o tom, co jste vůbec nechtěli a váš web pak neodpovídá tomu, co jste původně chtěli.</span>}</div>
+                <div className="w-full mt-6px md:w-1/3 text-16 text-center">{activeFirstPage ? <span>Kvalita webu = více než <span className="text-emerald-400 font-semibold">90 %</span> - to dokládají i měřící nástroje Googlu, kde mé weby dosahují vynikajících výsledků (tzv. Core web vitals) </span> : <span>Kvalita webu = méně než <span className="text-red-400 font-semibold">45 %</span> - za hodně peněz málo muziky. Obchodní oddělení vás přesvědčí i o tom, co jste vůbec nechtěli a váš web pak neodpovídá tomu, co jste původně chtěli.</span>}</div>
                 <SelectGoodOrBadWeb firstActive={activeFirstPage} setFirstActive={(what: boolean) => setActiveFirstPage(what)} />
                 <div className="w-full grid grid-cols-1 md:grid-cols-3">
                     <div className="block h-300px md:h-full mb-20px md:mb-0 f w-full">
@@ -80,9 +80,9 @@ export default function Graph() {
                         </div>
                     </div>
                     <div className="block  md:pl-30px px-12px md:pr-0 h-full ">
-                        <Label color={activeFirstPage ? "bg-green-400" : "bg-gray-400"} heading="Kvalitní a především váš web" text="Web, který dostanete bude přesně takový, jaký si ho vysníte. Neexistují žádné limity ve funkcích nebo vzhledu webu. O váš web se rád postarám, ale dostanete zdrojový kód webu a dokumentaci například pro budocí webmastery." />
-                        <Label color={activeFirstPage ? "bg-green-500" : "bg-gray-500"} heading="Zaručeně férové jednání" text="Nemám vás na háku a najdu si vždy dostatek času, abychom se domluvili na přesné podobě webu a dalších podrobnostech. Nemusíte být počítačový mág, domluva je věcná a jasná." />
-                        <Label color={activeFirstPage ? "bg-green-600" : "bg-red-400"} heading="Vizuálně příjemný zážitek" text="Webové stránky budou hezké a odovídat moderním trendům. Neskončí tak v propadlišti internetu." />
+                        <Label color={activeFirstPage ? "bg-emerald-400" : "bg-gray-400"} heading="Kvalitní a především váš web" text="Web, který dostanete bude přesně takový, jaký si ho vysníte. Neexistují žádné limity ve funkcích nebo vzhledu webu. O váš web se rád postarám, ale dostanete zdrojový kód webu a dokumentaci například pro budocí webmastery." />
+                        <Label color={activeFirstPage ? "bg-emerald-500" : "bg-gray-500"} heading="Zaručeně férové jednání" text="Nemám vás na háku a najdu si vždy dostatek času, abychom se domluvili na přesné podobě webu a dalších podrobnostech. Nemusíte být počítačový mág, domluva je věcná a jasná." />
+                        <Label color={activeFirstPage ? "bg-emerald-600" : "bg-red-400"} heading="Vizuálně příjemný zážitek" text="Webové stránky budou hezké a odovídat moderním trendům. Neskončí tak v propadlišti internetu." />
                     </div>
                     <div className="block md:pl-30px px-12px md:pr-0 h-full ">
                         <Label color={activeFirstPage ? "bg-green-700" : "bg-red-500"} heading="Technické pozadí webu" text="Kompletní web musí jít vyhledat na internetu. Proto všechny mé weby mají nastavené SEO na vysoké úrovni. Vše spojené se správou webu nemusíte vůbec řešit." />
@@ -105,7 +105,7 @@ export default function Graph() {
                     </div>
                     <div className="text-center text-16 font-regular">Napište mi na e-mail:</div>
                     <Link href="mailto:jsem@vojtechcina.cz">
-                        <div className="text-center text-16 font-regular h-65px bg-green-500 flex items-center justify-center px-50px rounded-lg my-20px font-medium select-none cursor-pointer hover:bg-green-400">jsem@vojtechcina.cz</div>
+                        <div className="text-center text-16 font-regular h-65px bg-emerald-500 flex items-center justify-center px-50px rounded-lg my-20px font-medium select-none cursor-pointer hover:bg-emerald-400">jsem@vojtechcina.cz</div>
                     </Link>
                 </div>
             </div>

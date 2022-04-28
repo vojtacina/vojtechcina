@@ -22,7 +22,7 @@ export default function Start() {
                         whileHover={{
                             scale: 1.025
                         }}
-                        onClick={() => setSelected("web")} className={" hover:scale-105 transform  cursor-pointer rounded-lg flex justify-center flex-col  transition duration-200 m-20px p-16px text-center " + (selected == "web" ? " bg-green-400 text-white " : " hover:bg-gray-800 ")}>
+                        onClick={() => setSelected("web")} className={" hover:scale-105 transform  cursor-pointer rounded-lg flex justify-center flex-col  transition duration-200 m-20px p-16px text-center " + (selected == "web" ? " bg-emerald-400 text-white " : " hover:bg-gray-800 ")}>
                             <h3 className="text-24 font-semibold pb-8px">Tvorba webu</h3>
                             <p className={(selected == "web") ? " text-black " : "text-white"}>Díky webu vás na internetu najde spousta dalších lidí, kteří by si vás jinak třeba ani nevšimli.</p>
                             <p className={(selected == "web") ? " text-black " : "text-white"}> Součásti může být i vytvoření, správa a poradenství ohledně sociálních sítí (Facebook, Instagram)</p>
@@ -35,7 +35,7 @@ export default function Start() {
                         whileHover={{
                             scale: 1.025
                         }}
-                        onClick={() => setSelected("grafika")} className={" hover:scale-105 transform  cursor-pointer rounded-lg flex justify-center flex-col  transition duration-200 m-20px p-16px text-center " + (selected == "grafika" ? " bg-green-400 text-white " : " hover:bg-gray-800 ")}>
+                        onClick={() => setSelected("grafika")} className={" hover:scale-105 transform  cursor-pointer rounded-lg flex justify-center flex-col  transition duration-200 m-20px p-16px text-center " + (selected == "grafika" ? " bg-emerald-400 text-white " : " hover:bg-gray-800 ")}>
                             <h3 className="text-24 font-semibold pb-8px">Grafika, letáky, logo,..</h3>
                             <p className={(selected == "grafika") ? " text-black " : "text-white"}>Pokud začínáte podnikat nebo už značku máte a chcete mít jasně daný styl, který vás nejen odliší od konkurence, ale také přitáhne zvědavé zákazníky, rád vám s tím pomohu.</p>
                         </motion.div>
@@ -47,7 +47,7 @@ export default function Start() {
                         whileHover={{
                             scale: 1.025
                         }}
-                        onClick={() => setSelected("poradenstvi")} className={" hover:scale-105 transform  cursor-pointer rounded-lg flex justify-center flex-col  transition duration-200 m-20px p-16px text-center " + (selected == "poradenstvi" ? " bg-green-400 text-white " : " hover:bg-gray-800 ")}>
+                        onClick={() => setSelected("poradenstvi")} className={" hover:scale-105 transform  cursor-pointer rounded-lg flex justify-center flex-col  transition duration-200 m-20px p-16px text-center " + (selected == "poradenstvi" ? " bg-emerald-400 text-white " : " hover:bg-gray-800 ")}>
                             <h3 className="text-24 font-semibold pb-8px">Poradenství</h3>
                             <p className={(selected == "poradenstvi") ? " text-black " : "text-white"}>Možná si nejste jistí, co vlastně budete potřebovat. Rád se s vámi spojím a domluvíme se na ideálním postupu.</p>
                             <p className={(selected == "poradenstvi") ? " text-black " : "text-white"}>Můžeme si popovídat o propagaci, grafice, webu nebo sociálních sítích. Vše spolu navrhneme a naplánujeme pokud žádnou představu zatím nemáte. </p>

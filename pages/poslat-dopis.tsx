@@ -65,7 +65,7 @@ export default function Home() {
                             <input onChange={(el) => setPhoneNumber(el.target.value)} type="tel" name="phone" placeholder="Sem napiš číslo" className=" rounded-lg shadow-ontop w-full p-16px focus:outline-none text-24 text-black tracking-widest"></input>
                         </motion.div>
 
-                        <div onClick={() => check()} className={"text-center flex-grow text-16 font-regular h-auto bg-green-500 flex items-center justify-center p-20px rounded-lg  font-medium select-none cursor-pointer hover:bg-green-400 md:opacity-100 transition duration-500 " + (focused === false ? " opacity-100 " : " opacity-0 ")}>Ověřit</div>
+                        <div onClick={() => check()} className={"text-center flex-grow text-16 font-regular h-auto bg-emerald-500 flex items-center justify-center p-20px rounded-lg  font-medium select-none cursor-pointer hover:bg-emerald-400 md:opacity-100 transition duration-500 " + (focused === false ? " opacity-100 " : " opacity-0 ")}>Ověřit</div>
 
 
                     </div>

@@ -1,7 +1,10 @@
 
 import Head from "next/head";
+import Link from "next/link";
+import { PaperPlaneTilt } from "phosphor-react";
 import React from "react";
 import About from "../components/About";
+import Contact from "../components/Contact";
 // import Contact from '../components/Contact'
 import Graph from "../components/Graph";
 import Header from "../components/Header/Header";
@@ -34,12 +37,20 @@ export default function Home() {
         />
 
       </Head>
-      <Header />
+      {/* <Header /> */}
       <Leading />
-      <Offer />
+      {/* <Offer /> */}
       {/* <Contact /> */}
-      <Graph />
+      {/* <Graph /> */}
       <About />
+      <div className="fixed bottom-0 left-0 right-0 px-20px md:pb-20px z-20 flex justify-center">
+        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSf2SXbVN4y-4BURTc7X4I5lyPhGsYa13je5FOQ7PCcPMi3m0Q/viewform?usp=sf_link">
+          <a target='_blank' className="text-center gap-6px text-16 font-regular h-45px bg-emerald-600 flex items-center justify-center px-20px rounded-lg my-10px font-medium select-none cursor-pointer hover:bg-emerald-500">
+            <PaperPlaneTilt size={24} />
+            <div className="">Získat nabídku</div>
+          </a>
+        </Link>
+      </div>
 
     </div>
 
