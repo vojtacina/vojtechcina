@@ -44,7 +44,7 @@ export default function About() {
                             <div className="py-20px text-18 font-light">Kontaktní údaje:</div>
                             <div className="">
                                 <ul className="list-disc pl-30px">
-                                    <li>Úvoz 445/116 Brno-Veveří</li>
+                                    <li>Šumperk, Zábřeh a okolí</li>
                                     <li>jsem@vojtechcina.cz</li>
                                     <li>+420 774 148 327</li>
                                     <li>IČO: 09902287</li>
