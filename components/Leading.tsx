@@ -16,16 +16,9 @@ export default function Leading() {
                         {/* <span className="uppercase px-4px py-2px bg-emerald-500 font-semibold rounded text-white text-14">DNES</span> */}
                     </div>
                     <div className="mt-20px flex flex-col w-full md:flex-row items-center justify-center gap-8px">
-                        <Link href="https://voj.notion.site/d32d1aec6e6b4cbcad7a1e762cd715e3?v=f58a98d17957461cb32c2b268bf7ba1d">
-                            <a target='_blank' className="text-center text-16 font-regular h-45px bg-gray-800 flex items-center justify-center px-20px rounded-lg my-10px font-medium select-none cursor-pointer hover:bg-gray-700">
-                                <div>Reference</div>
-                            </a>
+                        <Link target='_blank' className="text-center text-16 font-regular h-45px bg-gray-800 flex items-center justify-center px-20px rounded-lg my-10px font-medium select-none cursor-pointer hover:bg-gray-700" href="https://voj.notion.site/d32d1aec6e6b4cbcad7a1e762cd715e3?v=f58a98d17957461cb32c2b268bf7ba1d">
+                            <div>Reference</div>
                         </Link>
-                        {/* <div className="hidden md:block">
-                            <Link href="https://voj.notion.site/Kontakt-fb03fcd95ae2480e9c9f84f216cf5640">
-                                <a target='_blank' className="text-center text-16 font-regular h-45px bg-emerald-600 flex items-center justify-center px-20px rounded-lg my-10px font-medium select-none cursor-pointer hover:bg-emerald-500">Získat nabídku</a>
-                            </Link>
-                        </div> */}
                     </div>
                     <div className="mt-20px text-gray-400">
                         <ArrowDown size={32} weight="thin" />

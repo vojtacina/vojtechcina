@@ -39,6 +39,7 @@ function Label({ color, heading, text }: LabelProps) {
             <div>
                 <h3 className="font-medium mt-4px cursor-pointer " onClick={() => setTouched(!touched)}>{heading}</h3>
                 {(text) &&
+                    // @ts-expect-error
                     <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={300} isVisible={touched} className={(touched ? "block" : "hidden") + " lg:block font-light"}><div key={heading + "_text"}>{text}</div></Animated>
                 }
             </div>
@@ -76,7 +77,7 @@ export default function Graph() {
                 <div className="w-full grid grid-cols-1 md:grid-cols-3">
                     <div className="block h-300px md:h-full mb-20px md:mb-0 f w-full">
                         <div className="md:pb-full relative w-full h-300px select-none">
-                            <Image src={activeFirstPage ? "/img/graph_green.svg" : "/img/graph_red.svg"} layout="fill" objectFit="contain" loading="eager" unoptimized={true} />
+                            <Image alt='Graf zelený' src={activeFirstPage ? "/img/graph_green.svg" : "/img/graph_red.svg"} layout="fill" objectFit="contain" loading="eager" unoptimized={true} />
                         </div>
                     </div>
                     <div className="block  md:pl-30px px-12px md:pr-0 h-full ">

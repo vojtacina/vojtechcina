@@ -86,6 +86,7 @@ export default function Home() {
         }
 
       </div>
+      {/* @ts-expect-error */}
       <AnimatePresence>
         {clicked &&
           <motion.div

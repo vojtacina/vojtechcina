@@ -12,7 +12,7 @@ export default function About() {
                 <div className="w-full font-light text-36 text-center py-20px">Kdo jsem</div>
                 <div className=" grid grid-cols-1 md:grid-cols-2">
                     <div className="w-full h-200px md:h-full relative select-none order-2 md:order-1">
-                        <Image src="/img/myface.jpg" layout="fill" objectFit="contain" />
+                        <Image alt="Vojtěch Cina můj obličej" src="/img/myface.jpg" layout="fill" objectFit="contain" />
                     </div>
                     <div className="md:w-2/3  flex items-center order-1 md:order-2">
                         <div className="py-30px">
